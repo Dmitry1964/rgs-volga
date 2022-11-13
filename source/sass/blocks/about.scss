@@ -1,0 +1,48 @@
+.about {
+  height: 750px;
+  background-image: url("../img/back-about.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: -100;
+  padding: 60px 0 45px;
+  // border-radius: 60px;
+
+  @include retina {
+    background-image: url("../img/back-about@2x.jpg");
+  }
+}
+
+.about__wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.about__title {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 82px;
+  text-transform: uppercase;
+  color: $color-neon-carrot;
+  margin: 0 0 100px 0;
+  padding-top: 120px;
+}
+
+.about__desc {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: $color-solitude;
+  margin: 0;
+}
+
+.about__images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 46px
+}

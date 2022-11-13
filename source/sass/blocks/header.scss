@@ -1,0 +1,31 @@
+.header {
+  background-image: url("../img/header-back-desk.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 750px;
+  // border-radius: 0 0 60px 60px;
+  object-fit: cover;
+
+  @include retina {
+    background-image: url("../img/header-back-desk@2x.png");
+  }
+}
+
+.header__content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 140px;
+  padding-right: 100px;
+}
+
+.header__title {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 82px;
+  text-transform: uppercase;
+  color: $color-neon-carrot;
+  width: 504px;
+}
