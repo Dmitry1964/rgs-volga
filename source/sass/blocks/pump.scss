@@ -1,0 +1,33 @@
+.pump {
+  background-color: $color-solitude;
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+
+.pump__wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  column-gap: 45px;
+  row-gap: 30px;
+}
+
+.pump__slider {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.pump__title {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: -1;
+}
+
+.pump__buttons {
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+}
