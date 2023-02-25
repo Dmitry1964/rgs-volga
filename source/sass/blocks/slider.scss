@@ -1,10 +1,15 @@
 .slider {
-  padding: 35px 0  35px 10px;
+  width: 725px;
+  padding: 35px 0  35px 35px;
+  border: 5px solid $color-neon-carrot;
+  border-radius: 50px;
 }
 
 .slider__item {
   display: flex;
-  gap: 50px;
+  gap: 20px;
+  position: absolute;
+  transform: translateX(100%);
 }
 
 .slider__title {
@@ -16,4 +21,40 @@
 }
 
 .slider__info  {
+  padding: 25px 0;
+}
+
+.slider__list {
+  flex-wrap: nowrap;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__item--current {
+  transform: translateX(0%);
+}
+
+.slider__description {
+  margin: 0;
+}
+
+.slider__button {
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50%;
+  background-color: $color-supernova;
+  cursor: pointer;
+
+  &--prev {
+    transform: rotate(180deg);
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
 }
