@@ -3,7 +3,8 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 750px;
+  padding-bottom: 50px;
+  // height: 750px;
   // border-radius: 0 0 60px 60px;
   object-fit: cover;
 
@@ -17,8 +18,8 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding-left: 140px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .header__title {
