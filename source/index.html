@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Описание проекта">
-  <title>ProjectName</title>
+  <title>Сервис и ремонт спецтехники</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=7b566516-0aa0-403a-884a-02acfe5c23eb&lang=ru_RU"
+  type="text/javascript"></script>
 </head>
 
 <body>
@@ -111,25 +113,15 @@
         <h2 class="pump__title">Ремонт<br>гидронасосов</h2>
         <article class="pump__slider slider">
           <ul class="pump__slider-list slider__list">
-            <li class="pump__slider-item slider__item slider__item--current" data-model="rexroth4vg">
-              <img class="slider__img" src="img/rexroth4vg.png" srcset="img/rexroth4vg@2x.png 2x" alt="Изображение насоса">
-              <div class="pump__slider-info slider__info">
-                <h3 class="slider__title">Гидронасосы серии<br>Rexroth A4VG</h3>
-               <img src="img/svg/marker.svg" width="362" height="34" alt="Маркер">
-               <p class="slider__description">гидростатические  передачи
-                сельскохозяйственной
-                и строительной техники</p>
-              </div>
-            </li>
           </ul>
         </article>
-        <div class="pump__buttons">
-          <button class="slider__button slider__button--prev slider__button--disabled">
+        <div class="pump__buttons slider__buttons">
+          <button class="slider__button slider__button--prev slider__button--disabled" data-button="prev">
             <svg width="53" height="38" viewBox="0 0 53 38" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M51.7678 20.7678C52.7441 19.7915 52.7441 18.2085 51.7678 17.2322L35.8579 1.32233C34.8816 0.34602 33.2986 0.34602 32.3223 1.32233C31.346 2.29864 31.346 3.88155 32.3223 4.85786L46.4645 19L32.3223 33.1421C31.346 34.1184 31.346 35.7014 32.3223 36.6777C33.2986 37.654 34.8816 37.654 35.8579 36.6777L51.7678 20.7678ZM0 21.5L50 21.5V16.5L0 16.5L0 21.5Z" fill="#EDEFF6"/>
               </svg>
           </button>
-          <button class="slider__button slider__button--next">
+          <button class="slider__button slider__button--next" data-button="next">
             <svg width="53" height="38" viewBox="0 0 53 38" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M51.7678 20.7678C52.7441 19.7915 52.7441 18.2085 51.7678 17.2322L35.8579 1.32233C34.8816 0.34602 33.2986 0.34602 32.3223 1.32233C31.346 2.29864 31.346 3.88155 32.3223 4.85786L46.4645 19L32.3223 33.1421C31.346 34.1184 31.346 35.7014 32.3223 36.6777C33.2986 37.654 34.8816 37.654 35.8579 36.6777L51.7678 20.7678ZM0 21.5L50 21.5V16.5L0 16.5L0 21.5Z" fill="#EDEFF6"/>
               </svg>
@@ -143,25 +135,15 @@
         <h2 class="dispenser__title">Ремонт<br>распределителей</h2>
         <article class="dispenser__slider slider" data-slider="dispenser-section">
           <ul class="dispenser__slider-list slider__list">
-            <li class="dispenser__slider-item slider__item slider__item--current" data-model="rexroth4vg">
-              <img class="slider__img" src="img/Р80.png" srcset="img/Р80@2x.png 2x" alt="Изображение насоса">
-              <div class="dispenser__slider-info slider__info">
-                <h3 class="slider__title dispenser__slider-title">Гидроравпределители серии Р-80</h3>
-               <img src="img/svg/marker.svg" width="362" height="34" alt="Маркер">
-               <p class="slider__description dispenser__slider-desc">экскаваторы-погрузчики
-                погрузчики на базе МТЗ-82
-                буровые установки БКМ</p>
-              </div>
-            </li>
           </ul>
         </article>
-        <div class="dispenser__buttons">
-          <button class="slider__button slider__button--prev slider__button--disabled">
+        <div class="dispenser__buttons slider__buttons">
+          <button class="slider__button slider__button--prev slider__button--disabled" data-button="prev">
             <svg width="53" height="38" viewBox="0 0 53 38" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M51.7678 20.7678C52.7441 19.7915 52.7441 18.2085 51.7678 17.2322L35.8579 1.32233C34.8816 0.34602 33.2986 0.34602 32.3223 1.32233C31.346 2.29864 31.346 3.88155 32.3223 4.85786L46.4645 19L32.3223 33.1421C31.346 34.1184 31.346 35.7014 32.3223 36.6777C33.2986 37.654 34.8816 37.654 35.8579 36.6777L51.7678 20.7678ZM0 21.5L50 21.5V16.5L0 16.5L0 21.5Z" fill="#EDEFF6"/>
               </svg>
           </button>
-          <button class="slider__button slider__button--next">
+          <button class="slider__button slider__button--next" data-button="next">
             <svg width="53" height="38" viewBox="0 0 53 38" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M51.7678 20.7678C52.7441 19.7915 52.7441 18.2085 51.7678 17.2322L35.8579 1.32233C34.8816 0.34602 33.2986 0.34602 32.3223 1.32233C31.346 2.29864 31.346 3.88155 32.3223 4.85786L46.4645 19L32.3223 33.1421C31.346 34.1184 31.346 35.7014 32.3223 36.6777C33.2986 37.654 34.8816 37.654 35.8579 36.6777L51.7678 20.7678ZM0 21.5L50 21.5V16.5L0 16.5L0 21.5Z" fill="#EDEFF6"/>
               </svg>
@@ -169,30 +151,20 @@
         </div>
       </div>
     </section>
-
     <section class="motor">
       <div class="motor__wrapper container">
         <h2 class="motor__title">Ремонт<br>гидромоторов</h2>
         <article class="motor__slider slider" data-slider="motor-section">
           <ul class="motor__slider-list slider__list">
-            <li class="motor__slider-item slider__item slider__item--current" data-model="rexroth4vg">
-              <img class="slider__img" src="img/motor-303.png" srcset="img/motor-303@2x.png 2x" alt="Изображение насоса">
-              <div class="motor__slider-info slider__info">
-                <h3 class="slider__title">регулируемые Гидромоторы
-                  серии 303</h3>
-               <img src="img/svg/marker.svg" width="362" height="34" alt="Маркер">
-               <p class="slider__description">привод лебедки автокранов привод бура БКМ</p>
-              </div>
-            </li>
           </ul>
         </article>
-        <div class="motor__buttons">
-          <button class="slider__button slider__button--prev slider__button--disabled">
+        <div class="motor__buttons slider__buttons">
+          <button class="slider__button slider__button--prev slider__button--disabled" data-button="prev">
             <svg width="53" height="38" viewBox="0 0 53 38" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M51.7678 20.7678C52.7441 19.7915 52.7441 18.2085 51.7678 17.2322L35.8579 1.32233C34.8816 0.34602 33.2986 0.34602 32.3223 1.32233C31.346 2.29864 31.346 3.88155 32.3223 4.85786L46.4645 19L32.3223 33.1421C31.346 34.1184 31.346 35.7014 32.3223 36.6777C33.2986 37.654 34.8816 37.654 35.8579 36.6777L51.7678 20.7678ZM0 21.5L50 21.5V16.5L0 16.5L0 21.5Z" fill="#EDEFF6"/>
               </svg>
           </button>
-          <button class="slider__button slider__button--next">
+          <button class="slider__button slider__button--next" data-button="next">
             <svg width="53" height="38" viewBox="0 0 53 38" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M51.7678 20.7678C52.7441 19.7915 52.7441 18.2085 51.7678 17.2322L35.8579 1.32233C34.8816 0.34602 33.2986 0.34602 32.3223 1.32233C31.346 2.29864 31.346 3.88155 32.3223 4.85786L46.4645 19L32.3223 33.1421C31.346 34.1184 31.346 35.7014 32.3223 36.6777C33.2986 37.654 34.8816 37.654 35.8579 36.6777L51.7678 20.7678ZM0 21.5L50 21.5V16.5L0 16.5L0 21.5Z" fill="#EDEFF6"/>
               </svg>
@@ -200,14 +172,54 @@
         </div>
       </div>
     </section>
-
-    <section class="cylinder">
-      <div class="cylinder__wrapper container"></div>
+     <section class="cylinder">
+      <div class="cylinder__wrapper container">
+        <div class="cylinder__info">
+          <h2 class="cylinder__title">Ремонт
+            гидроцилиндров</h2>
+          <ul class="cylinder__list">
+            <li class="cylinder__item">
+              <img src="img/svg/ball.svg" width="20" height="20" alt="Пункт меню">
+              <span>замена уплотнений</span>
+            </li>
+            <li class="cylinder__item">
+              <img src="img/svg/ball.svg" width="20" height="20" alt="Пункт меню">
+              <span>изготовление новых штоков</span>
+            </li>
+            <li class="cylinder__item">
+              <img src="img/svg/ball.svg" width="20" height="20" alt="Пункт меню">
+              <span>замена гильзы</span>
+            </li>
+          </ul>
+        </div>
+        <div class="cylinder__image">
+          <img src="img/cylinder.png" srcset="img/cylinder@2x.png 2x" alt="Изображение цилиндра">
+        </div>
+      </div>
     </section>
-
-
   </main>
-  <script src="js/vendor.min.js"></script>
+  <div class="map">
+    <div class="map__item" id="map"></div>
+  </div>
+    <footer class="footer">
+      <div class="main-nav__wrapper container">
+        <img src="img/svg/logo-white.svg" width="478" height="102" alt="Логотип сайта">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="tel:+79608726622">
+              <img src="img/svg/icon-phone.svg" width="50" height="50" alt="Иконка телефон">
+              <span>+7 (960) 872-66-22</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="mailto:rgs-volga@gmail.com">
+              <img src="img/svg/icon-mail.svg" width="50" height="50" alt="Иконка электронная почта">
+              <span>gidravlika-m@mail.ru</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   <script src="js/main.min.js"></script>
 </body>
 

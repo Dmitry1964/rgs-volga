@@ -1,15 +1,11 @@
 .about {
-  height: 750px;
   background-image: url("../img/back-about.jpg");
   background-size: cover;
   object-fit: cover;
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
   z-index: -100;
   padding: 60px 0 45px;
-  background-color: $color-default-black;
-  // border-radius: 60px;
 
   @include retina {
     background-image: url("../img/back-about@2x.jpg");
@@ -53,6 +49,7 @@
   line-height: 33px;
   color: $color-supernova;
   padding-left: 20px;
+  z-index: 10;
 }
 
 .about__images {

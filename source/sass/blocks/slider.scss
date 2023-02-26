@@ -9,7 +9,14 @@
   display: flex;
   gap: 20px;
   position: absolute;
-  transform: translateX(100%);
+  // transform: translateX(100%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+  &--current {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
 }
 
 .slider__title {
@@ -31,10 +38,6 @@
   position: relative;
   margin: 0;
   padding: 0;
-}
-
-.slider__item--current {
-  transform: translateX(0%);
 }
 
 .slider__description {

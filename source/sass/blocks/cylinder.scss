@@ -1,0 +1,39 @@
+.cylinder {
+  padding-top: 90px;
+  padding-bottom: 165px;
+  background-color: $color-default-black;
+}
+
+.cylinder__wrapper {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+}
+
+.cylinder__title {
+  font-size: 50px;
+  line-height: 68px;
+  color: $color-neon-carrot;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.cylinder__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 70px;
+}
+
+.cylinder__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cylinder__item span {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 600;
+  color: $color-supernova;
+  padding-left: 30px;
+}
