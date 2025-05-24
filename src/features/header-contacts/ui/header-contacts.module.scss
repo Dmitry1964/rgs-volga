@@ -1,0 +1,131 @@
+@use '/src/styles/mixins.scss';
+@use '/src/styles/variables.scss';
+
+.header_contacts {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+
+  @include mixins.vp-1279 {
+    padding: 20px;
+  }
+
+  @include mixins.vp-767 {
+    justify-content: space-between;
+  }
+}
+
+.header_contacts__logo {
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+
+  @include mixins.vp-1439 {
+    margin-right: 20px;
+  }
+
+  @include mixins.vp-767 {
+    margin-right: 0;
+  }
+
+  & span {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: variables.$color-malibu;
+
+    @include mixins.vp-1439 {
+      font-size: 1.6rem;
+    }
+
+    @include mixins.vp-767 {
+      font-size: 1.3rem;
+      line-height: 1.4rem;
+    }
+  }
+
+  & img {
+    width: 75px;
+    margin-right: 15px;
+
+    @include mixins.vp-767 {
+      width: 40px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.header_contacts__title {
+  display: flex;
+  flex-direction: column;
+
+  & img {
+    width: 120px;
+
+    @include mixins.vp-767 {
+      width: 100px;
+    }
+
+    @include mixins.vp-374 {
+      width: 80px;
+    }
+  }
+}
+
+.header_contacts__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.header_contacts__item {
+  margin-right: 30px;
+
+  @include mixins.vp-1279 {
+    margin-right: 15px;
+  }
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.header_contacts__link {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color 0.35s ease;
+  border-radius: 5px;
+  
+  font-size: 1.6rem;
+  font-family: variables.$ff-second;
+  line-height: 2.2rem;
+  color: variables.$color-malibu;
+
+  @include mixins.vp-1279 {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+
+  &:hover {
+    background-color: variables.$color-curious-blue-80;
+  }
+
+  & span {
+    margin-left: 15px;
+  }
+
+  & svg {
+    width: 40px;
+    height: 40px;
+
+    @include mixins.vp-1279 {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+

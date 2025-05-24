@@ -1,0 +1,77 @@
+@use '/src/styles/variables.scss';
+@use '/src/styles/mixins.scss';
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: variables.$color-curious-blue-80;
+
+  @include mixins.vp-767 {
+    background-color: variables.$color-midnight-express;
+  }
+}
+
+.navbar__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include mixins.vp-1023 {
+    padding-left: 0;
+  }
+
+  @include mixins.vp-767 {
+    flex-direction: column;
+    background-color: variables.$color-midnight-express;
+  }
+
+}
+
+.navbar__item {
+  background-color: transparent;
+}
+
+.navbar__link {
+  display: block;
+  height: 100%;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: variables.$color-default-white;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 20px;
+  transition: background-color 0.35s ease;
+
+  @include mixins.vp-1023 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 10px;
+    // padding: 20px 30px;
+  }
+
+  @include mixins.vp-767 {
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+.navbar__item:hover .navbar__link:not(.active) {
+  background-color: variables.$color-eastern-blue;
+}
+
+.navbar__link:focus  {
+  background-color: variables.$color-eastern-blue;
+  outline: none;
+}
+
+.active {
+  color: variables.$color-default-white;
+  background-color: variables.$color-curious-blue-80;
+  text-decoration: underline;
+
+  @include mixins.vp-767 {
+    background-color: transparent;
+    color: variables.$color-malibu;
+  }
+}

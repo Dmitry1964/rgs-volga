@@ -1,0 +1,55 @@
+@use '/src/styles/variables.scss';
+@use '/src/styles/mixins.scss';
+
+.intro {
+  height: 350px;
+  background-color: black;
+  background-image: url("../img/content/pattern.jpeg");
+  background-position-x: 150px;
+  border-top: 1px solid variables.$color-default-white-20;
+  padding-top: 100px;
+
+  @include mixins.vp-1023 {
+    padding-top: 65px;
+  }
+
+  @include mixins.vp-767 {
+    padding-top: 30px;
+    height: 200px;
+  }
+
+  & p {
+    font-family: variables.$ff-second;
+    font-size: 4rem;
+    line-height: auto;
+    color: variables.$color-malibu;
+    text-align: center;
+    margin: 0 0 50px;
+
+    @include mixins.vp-1279 {
+      @include mixins.fluid-font-reverse(30px, 40px, 768px, 1280px)
+    }
+
+    @include mixins.vp-767 {
+      @include mixins.fluid-font-reverse(20px, 30px, 320px, 768px);
+      line-height: 2.8rem;
+      margin: 0 0 40px;
+    }
+  }
+
+  & h2 {
+    font-size: 6.2rem;
+    line-height: auto;
+    color: variables.$color-default-white;
+    text-align: center;
+    margin: 0;
+
+    @include mixins.vp-1439 {
+      @include mixins.fluid-font-reverse(50px, 62px, 768px, 1280px)
+    }
+
+    @include mixins.vp-767 {
+      @include mixins.fluid-font-reverse(20px, 50px, 320px, 768px)
+    }
+  }
+}

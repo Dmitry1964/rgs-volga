@@ -1,5 +1,5 @@
 {
-  "name": "my-react-app",
+  "name": "temp-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,18 +10,31 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.1.0",
+    "@mui/joy": "^5.0.0-beta.52",
+    "@mui/material": "^7.1.0",
+    "@types/swiper": "^6.0.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.0",
+    "swiper": "^11.2.7"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
+    "@stylistic/stylelint-plugin": "^3.1.2",
+    "@types/node": "^22.15.18",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react-swc": "^3.9.0",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
+    "gh-pages": "^6.3.0",
     "globals": "^16.0.0",
+    "sass": "^1.89.0",
+    "stylelint": "^16.19.1",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
     "vite": "^6.3.5"

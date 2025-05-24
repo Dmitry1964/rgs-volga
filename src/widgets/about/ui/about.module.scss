@@ -1,0 +1,222 @@
+@use '/src/styles/container.scss';
+@use '/src/styles/variables.scss';
+@use '/src/styles/mixins.scss';
+
+.about {
+  padding-top: 115px;
+  padding-bottom: 100px;
+  background-color: variables.$color-midnight-express;
+
+  @include mixins.vp-1279 {
+    @include mixins.fluid-padding-top(90px, 115px, 1023px, 1280px);
+    @include mixins.fluid-padding-bottom(40px, 100px, 1023px, 1280px);
+  }
+
+  @include mixins.vp-1023 {
+    @include mixins.fluid-padding-top(15px, 90px, 767px, 1024px);
+    @include mixins.fluid-padding-bottom(15px, 40px, 767px, 1024px);
+  }
+
+  @include mixins.vp-767 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.about__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 438px 1fr;
+  column-gap: 2%;
+
+  @include mixins.vp-1439 {
+    grid-template-columns: 1fr 380px 1fr;
+  }
+
+  @include mixins.vp-1279 {
+    grid-template-columns: 1fr 300px 1fr;
+  }
+
+  @include mixins.vp-1023 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 25px;
+    row-gap: 40px;
+  }
+
+  @include mixins.vp-767 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+.about__content {
+
+  @include mixins.vp-1023 {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  & span {
+    display: inline-block;
+    font-family: variables.$ff-second;
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 700;
+    color: variables.$color-malibu;
+    margin-bottom: 40px;
+
+    @include mixins.vp-1439 {
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+      margin-bottom: 30px;
+    }
+  }
+
+  & h2 {
+    font-size: 5.2rem;
+    line-height: auto;
+    color: variables.$color-default-white;
+    margin: 0 0 50px;
+
+    @include mixins.vp-1439 {
+      font-size: 4.5rem;
+      line-height: auto;
+    }
+
+    @include mixins.vp-1279 {
+      font-size: 3.5rem;
+      margin: 0 0 40px;
+    }
+
+    @include mixins.vp-1023 {
+      margin-bottom: 20px;
+    }
+
+    @include mixins.vp-374 {
+      font-size: 3.2rem;
+      line-height: auto;
+    }
+  }
+
+  & p {
+    font-size: 1.8rem;
+    line-height: auto;
+    color: variables.$color-default-white;
+    margin: 0;
+
+    @include mixins.vp-1279 {
+      font-size: 1.6rem;
+      line-height: auto;
+    }
+
+    @include mixins.vp-1023 {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      font-family: variables.$ff-second;
+    }
+
+  }
+
+}
+
+.about__image {
+
+  @include mixins.vp-1023 {
+    padding-left: 50px;
+  }
+
+  & img {
+    filter: grayscale(80%) brightness(50%);
+    width: 400px;
+
+    @include mixins.vp-1023 {
+      width: 300px;
+    }
+  }
+}
+
+.about__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include mixins.vp-767 {
+    margin-left: 50px;
+  }
+
+  @include mixins.vp-767 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    justify-content: space-between;
+  }
+}
+
+.about__item {
+  display: flex;
+  font-family: variables.$ff-second;
+  font-size: 3.5rem;
+  line-height: 5rem;
+  font-weight: 700;
+  color: variables.$color-default-white;
+  margin-bottom: 50px;
+
+  @include mixins.vp-1439 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  @include mixins.vp-1279 {
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+  }
+
+  @include mixins.vp-1023 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+
+  @include mixins.vp-767 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+
+  & span {
+    margin-left: 25px;
+  }
+
+  & img {
+    @include mixins.vp-1439 {
+      width: 80px;
+      height: 80px;
+    }
+
+    @include mixins.vp-1439 {
+      width: 70px;
+      height: 70px;
+    }
+
+    @include mixins.vp-767 {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  & br {
+    @include mixins.vp-767 {
+      display: none;
+    }
+  }
+}

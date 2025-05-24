@@ -1,0 +1,98 @@
+@use "/src/styles/mixins.scss";
+@use '/src/styles/variables.scss';
+
+.banner__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.banner__image,
+.banner__content {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+
+.banner__image img {
+    width: 100vw;
+    height: 804px;
+    object-fit: cover;
+
+    @include mixins.vp-1023 {
+        height: 650px;
+    }
+
+    @include mixins.vp-767 {
+        @include mixins.fluid-size-height(450px, 650px, 320px, 768px);
+    }
+}
+
+.banner__content {
+    align-self: flex-end;
+    justify-self: center;
+    margin-bottom: 150px;
+    padding: 0 clamp(40px, 24px, 16px);
+
+    @include mixins.vp-1439 {
+        @include mixins.fluid-margin-bottom(130px, 150px, 768px, 1440px);
+    }
+
+    @include mixins.vp-767 {
+        @include mixins.fluid-margin-bottom(50px, 130px, 320px, 768px);
+    }
+}
+
+.banner__slogan {
+    font-size: 5rem;
+    line-height: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: variables.$color-malibu;
+    margin: 0 0 50px;
+
+    @include mixins.vp-1439 {
+        @include mixins.fluid-font-reverse(36px, 50px, 768px, 1440px);
+        @include mixins.fluid-margin-bottom(25px, 50px, 768px, 1440px);
+    }
+
+    @include mixins.vp-767 { 
+        @include mixins.fluid-font-reverse(20px, 36px, 320px, 768px); 
+        @include mixins.fluid-margin-bottom(30px, 25px, 320px, 768px);
+}
+}
+
+.banner__title {
+    font-size: 6.2rem;
+    line-height: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: variables.$color-default-white;
+    margin: 0 0 40px;
+
+    @include mixins.vp-1439 {
+        @include mixins.fluid-font-reverse(48px, 62px, 768px, 1440px);
+        @include mixins.fluid-margin-bottom(30px, 40px, 768px, 1440px);
+    }
+
+    @include mixins.vp-767 {
+        @include mixins.fluid-font-reverse(24px, 48px, 320px, 768px);
+    }
+}
+
+.banner__desc {
+    font-family: variables.$ff-second;
+    font-size: 2.4rem;
+    line-height: auto;
+    text-align: center;
+    color: variables.$color-default-white;
+    margin: 0;
+
+    @include mixins.vp-1439 {
+        @include mixins.fluid-font-reverse(16px, 24px, 768px, 1440px);
+    }
+
+    @include mixins.vp-767 {
+        @include mixins.fluid-font-reverse(14px, 24px, 320px, 768px);
+    }
+}
