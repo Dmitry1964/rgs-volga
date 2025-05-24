@@ -1,0 +1,12 @@
+@use '/src/styles/mixins.scss';
+
+.map_gis {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+
+  @include mixins.vp-1023 {
+    height: 400px;
+  }
+}
