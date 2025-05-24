@@ -1,0 +1,66 @@
+@use '/src/styles/variables.scss';
+@use '/src/styles/container.scss';
+@use '/src/styles/mixins.scss';
+
+.partners {
+  padding: 50px 0;
+  background-image: url("../img/content/pattern.jpeg");
+  background-position-x: 150px;
+  border-top: 1px solid variables.$color-default-white-20;
+
+  @include mixins.vp-1023 {
+    padding: 30px 0;
+  }
+
+  @include mixins.vp-767 {
+    padding: 15px 0;
+  }
+}
+
+.partners__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.partners__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.partners__title {
+  font-family: variables.$ff-second;
+  font-size: 6.2rem;
+  line-height: 7rem;
+  text-transform: uppercase;
+  color: variables.$color-default-white;
+  text-align: center;
+  margin: 30px 0;
+
+  @include mixins.vp-1439 {
+    font-size: 5.5rem;
+    line-height: 6.3rem;
+  }
+
+  @include mixins.vp-1279 {
+    font-size: 5rem;
+    line-height: 5.8rem;
+  }
+
+  @include mixins.vp-1023 {
+    font-size: 4.8rem;
+    line-height: 6rem;
+    margin: 25px 0;
+  }
+
+  @include mixins.vp-767 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin: 15px 0;
+  }
+
+  @include mixins.vp-374 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin: 15px 0;
+  }
+}

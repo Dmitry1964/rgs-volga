@@ -1,0 +1,15 @@
+@use '/src/styles/mixins.scss';
+
+.partner_card {
+  @include mixins.vp-1023 {
+    width: 230px;
+  }
+
+  @include mixins.vp-767 {
+    width: 110px;
+  }
+
+  @include mixins.vp-374 {
+    width: 90px;
+  }
+}
