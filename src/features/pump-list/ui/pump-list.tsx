@@ -34,10 +34,10 @@ const PumpList = (): React.ReactNode => {
         >
           <SwiperSlide>
             <PumpCard
-              img={'img/content/A10VSO.jpg'}
-              img2x={'img/content/A10VSO@2x.jpg'}
-              webp={'img/content/A10VSO.webp'}
-              webp2x={'img/content/A10VSO@2x.webp'}
+              img={'img/content/a10vso.jpg'}
+              img2x={'img/content/a10vso@2x.jpg'}
+              webp={'img/content/a10vso.webp'}
+              webp2x={'img/content/a10vso@2x.webp'}
               title={'Гидронасосы серии Rexroth A10VSO'}
               desc={
                 'Гидропривод навески сельскозяйственной и строительной техники'
