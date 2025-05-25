@@ -1,0 +1,19 @@
+@use '/src/styles/mixins.scss';
+@use '/src/styles/variables.scss';
+
+.swiper-button-prev,
+.swiper-button-next {
+  @include mixins.vp-767 {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: variables.$color-malibu;
+  opacity: 0.5;
+
+  &.swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+}
+

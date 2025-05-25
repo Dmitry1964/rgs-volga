@@ -1,0 +1,190 @@
+@use '/src/styles/variables.scss';
+@use '/src/styles/mixins.scss';
+
+.unit_card {
+  position: relative;
+}
+
+.unit_card__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.unit_card__img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.unit_card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding-bottom: 60px;
+  z-index: 100;
+
+  @include mixins.vp-1439 {
+    // padding-top: 100px;
+    // padding-bottom: 45px;
+  }
+
+  @include mixins.vp-1279 {
+    // padding-top: 80px;
+  }
+
+  @include mixins.vp-767 {
+    // padding-top: 30px;
+    // padding-bottom: 30px;
+  }
+}
+
+.unit_card__title {
+  font-size: 3rem;
+  line-height: 7rem;
+  color: variables.$color-default-white;
+  margin: 0 0 100px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: variables.$color-curious-blue-80;
+  transition: background-color 0.35s ease;
+
+  @include mixins.vp-1439 {
+    font-size: 2.5rem;
+    line-height: 7rem;
+  }
+
+  @include mixins.vp-1023 {
+    font-size: 2.5rem;
+    line-height: 5.8rem;
+    margin-bottom: 50px;
+  }
+
+    @include mixins.vp-767 {
+      @include mixins.fluid-font-reverse(16px, 25px, 320px, 768px);
+      // line-height: 4rem;
+      // margin-bottom: 50px;
+    }
+}
+
+
+.unit_card__desc {
+  font-family: variables.$ff-second;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  text-align: center;
+  color: variables.$color-default-white;
+  margin: 0;
+  padding: 0 10px;
+  flex-grow: 1;
+  color: variables.$color-default-white;
+
+  @include mixins.vp-1439 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+
+  @include mixins.vp-767 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+.unit_card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: variables.$color-default-white;
+  // color: variables.$color-midnight-express;
+  text-transform: uppercase;
+  // background-color: variables.$color-malibu;
+  width: 230px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.35s ease;
+  border-radius: 30px;
+  outline:  thick double variables.$color-default-white;
+
+  &:hover {
+    background-color: variables.$color-curious-blue-80;
+  }
+
+  @include mixins.vp-1439 {
+    width: 200px;
+    height: 60px;
+  }
+
+
+  @include mixins.vp-1023 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    width: 150px;
+    height: 40px;
+  }
+}
+
+.unit_card__img  img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  filter:grayscale(80%) brightness(50%);
+  transition: filter 0.5s ease;
+
+  @include mixins.vp-1439 {
+    height: 500px;
+  }
+
+  @include mixins.vp-1023 {
+    height: 400px;
+  }
+
+  @include mixins.vp-374 {
+    height: 350px;
+  }
+}
+
+.unit_card__modal_title {
+  font-size: 2.4rem;
+  line-height: auto;
+  color: variables.$color-malibu;
+  margin: 0 0 25px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include mixins.vp-1439 {
+    font-size: 2.4rem;
+  }
+
+  @include mixins.vp-1023 {
+    font-size: 2.5rem;
+  }
+
+    @include mixins.vp-767 {
+      @include mixins.fluid-font-reverse(16px, 25px, 320px, 768px);
+    }
+
+}
+
+.unit_card__modal_list {
+  list-style: circle;
+  margin: 0;
+}
+
+.unit_card__modal_item {
+  font-family: variables.$ff-second;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: variables.$color-default-white;
+
+  @include mixins.vp-374 {
+    font-size: 1.4rem;
+  }
+}

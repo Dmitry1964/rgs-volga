@@ -1,0 +1,43 @@
+@use '/src/styles/variables.scss';
+@use '/src/styles/container.scss';
+@use '/src/styles/mixins.scss';
+.repair_cylinder {
+  background-color: black;
+  background-image: url("../img/content/pattern.jpeg");
+  background-position-x: 100px;
+  border-top: 1px solid variables.$color-default-white-20;
+  padding-top: 50px;
+
+  @include mixins.vp-1279 {
+    padding-top: 30px;
+  }
+
+  @include mixins.vp-767 {
+    padding-top: 20px;
+  }
+
+  h2 {
+    font-family: variables.$ff-second;
+    font-size: 6.2rem;
+    line-height: auto;
+    color: variables.$color-malibu;
+    text-align: center;
+    margin: 0 0 50px;
+
+    @include mixins.vp-1279 {
+      @include mixins.fluid-font-reverse(50px, 62px, 768px, 1280px);
+    }
+
+    @include mixins.vp-767 {
+      @include mixins.fluid-font-reverse(20px, 50px, 320px, 768px);
+      margin: 0 0 15px;
+    }
+
+  }
+}
+
+.repair_cylinder__content {
+  padding: 30px 0;
+  background-color: variables.$color-prussian-blue;
+}
+

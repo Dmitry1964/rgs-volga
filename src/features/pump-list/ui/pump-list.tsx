@@ -72,7 +72,7 @@ const PumpList = (): React.ReactNode => {
               img2x={'img/content/rexrorh4vg@2x.jpg'}
               webp={'img/content/rexrorh4vg.webp'}
               webp2x={'img/content/rexrorh4vg@2x.webp'}
-              title={'Гидронасосы серии Rexroth A4VG'}
+              title={'Гидронасосы серии Rexroth A4VG/A10VG'}
               desc={
                 'Гидростатические передачи сельскозяйственной и дорожно-строительной техники.'
               }
