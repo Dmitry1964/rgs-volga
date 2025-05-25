@@ -1,0 +1,38 @@
+@use '/src/styles/variables.scss';
+@use '/src/styles/mixins.scss';
+
+.pump_card {
+  border: 1px solid;
+  border-color: variables.$color-eastern-blue;
+  border-radius: 10px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px auto 40px;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  &__title {
+    color: variables.$color-default-white;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  &__desc {
+    font-size: 14px;
+    color: variables.$color-default-white;
+  }
+}
+
+.pump_card__img {
+  img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
