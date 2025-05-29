@@ -17,12 +17,8 @@ const PumpList = (): React.ReactNode => {
           autoHeight={true}
           breakpoints={{
             320: {
-              slidesPerView: 1,
+              slidesPerView: 1.05,
             },
-
-            // 375: {
-            //   slidesPerView: 1.6,
-            // },
 
             768: {
               slidesPerView: 2,
@@ -35,9 +31,9 @@ const PumpList = (): React.ReactNode => {
           <SwiperSlide>
             <PumpCard
               img={'img/content/a10vso.jpg'}
-              img2x={'img/content/a10vso@2x.jpg'}
+              img2x={'img/content/a10vso@2x.jpg 2x'}
               webp={'img/content/a10vso.webp'}
-              webp2x={'img/content/a10vso@2x.webp'}
+              webp2x={'img/content/a10vso@2x.webp 2x'}
               title={'Гидронасосы серии Rexroth A10VSO'}
               desc={
                 'Гидропривод навески сельскозяйственной и строительной техники'
@@ -47,9 +43,9 @@ const PumpList = (): React.ReactNode => {
           <SwiperSlide>
             <PumpCard
               img={'img/content/PVS112.jpg'}
-              img2x={'img/content/PVS112@2x.jpg'}
+              img2x={'img/content/PVS112@2x.jpg 2x'}
               webp={'img/content/PVS112.webp'}
-              webp2x={'img/content/PVS112@2x.webp'}
+              webp2x={'img/content/PVS112@2x.webp 2x'}
               title={'Гидронасосы серии НП-90/НП-112'}
               desc={
                 'Гидропривод автомиксеров,комбайнов, минипогрузчиков'
@@ -59,9 +55,9 @@ const PumpList = (): React.ReactNode => {
           <SwiperSlide>
             <PumpCard
               img={'img/content/313_3_55.jpg'}
-              img2x={'img/content/313_3_55@2x.jpg'}
+              img2x={'img/content/313_3_55@2x.jpg 2x'}
               webp={'img/content/313_3_55.webp'}
-              webp2x={'img/content/313_3_55@2x.webp'}
+              webp2x={'img/content/313_3_55@2x.webp 2x'}
               title={'Гидронасосы серии ПСМ 313.3.55'}
               desc={'Основное применение экскаваторы ТВЕКС ЕК-14(18) и ЕТ-14(16)'}
             />
@@ -69,9 +65,9 @@ const PumpList = (): React.ReactNode => {
           <SwiperSlide>
             <PumpCard
               img={'img/content/rexrorh4vg.jpg'}
-              img2x={'img/content/rexrorh4vg@2x.jpg'}
+              img2x={'img/content/rexrorh4vg@2x.jpg 2x'}
               webp={'img/content/rexrorh4vg.webp'}
-              webp2x={'img/content/rexrorh4vg@2x.webp'}
+              webp2x={'img/content/rexrorh4vg@2x.webp 2x'}
               title={'Гидронасосы серии Rexroth A4VG/A10VG'}
               desc={
                 'Гидростатические передачи сельскозяйственной и дорожно-строительной техники.'

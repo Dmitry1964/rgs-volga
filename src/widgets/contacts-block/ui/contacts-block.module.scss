@@ -1,0 +1,33 @@
+@use '/src/styles/variables.scss';
+
+.contact_block {
+  padding: 26px 0;
+  background-color: variables.$color-curious-blue;
+}
+
+.contact_block__wrapper {
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.contact_block__link {
+  display: flex;
+  align-items: center;
+
+  &:first-child {
+    margin-right: 50px;
+  }
+
+  & img {
+    margin-right: 15px;
+  }
+
+  & span {
+    font-family: variables.$ff-second;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: variables.$color-paua;
+  }
+}

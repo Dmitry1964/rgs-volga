@@ -1,4 +1,5 @@
 import { Intro } from "src/widgets/intro";
+import { RepairBox } from "src/widgets/repair-box";
 import { RepairCylinder } from "src/widgets/repair-cylinder";
 import { RepairPump } from "src/widgets/repair-pump";
 
@@ -10,6 +11,7 @@ const RepairPage = (): React.ReactNode => {
             </Intro>
             <RepairPump />
             <RepairCylinder />
+            <RepairBox />
         </>
     )
 };
