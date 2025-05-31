@@ -1,4 +1,5 @@
 @use '/src/styles/variables.scss';
+@use '/src/styles/mixins.scss';
 
 .contact_block {
   padding: 26px 0;
@@ -9,7 +10,9 @@
   display: flex;
   justify-content: center;
 
-
+  @include mixins.vp-767 {
+    flex-direction: column;
+  }
 }
 
 .contact_block__link {
@@ -18,10 +21,19 @@
 
   &:first-child {
     margin-right: 50px;
+
+    @include mixins.vp-767 {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
   }
 
   & img {
     margin-right: 15px;
+
+    @include mixins.vp-767 {
+      width: 30px;
+    }
   }
 
   & span {
@@ -29,5 +41,10 @@
     font-size: 1.8rem;
     line-height: 2.4rem;
     color: variables.$color-paua;
+
+    @include mixins.vp-1023 {
+      font-size: 1.4rem;
+      line-height: 1.2;
+    }
   }
 }
