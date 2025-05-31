@@ -42,10 +42,10 @@ const PumpList = (): React.ReactNode => {
           </SwiperSlide>
           <SwiperSlide>
             <PumpCard
-              img={'img/content/PVS112.jpg'}
-              img2x={'img/content/PVS112@2x.jpg 2x'}
-              webp={'img/content/PVS112.webp'}
-              webp2x={'img/content/PVS112@2x.webp 2x'}
+              img={'img/content/pvs112.jpg'}
+              img2x={'img/content/pvs112@2x.jpg 2x'}
+              webp={'img/content/pvs112.webp'}
+              webp2x={'img/content/pvs112@2x.webp 2x'}
               title={'Гидронасосы серии НП-90/НП-112'}
               desc={
                 'Гидропривод автомиксеров,комбайнов, минипогрузчиков'
