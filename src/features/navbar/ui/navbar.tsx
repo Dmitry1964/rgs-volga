@@ -30,7 +30,7 @@ const Navbar = () => {
           </li>
           <li className={cls.navbar__item}>
             <NavLink
-              to="/services"
+              to={AppRoutes.Sevice}
               className={({ isActive }) =>
                 [cls.navbar__link, isActive ? cls.active : ""].join(" ")
               }
@@ -40,7 +40,7 @@ const Navbar = () => {
           </li>
           <li className={cls.navbar__item}>
             <NavLink
-              to="/contacts"
+              to={AppRoutes.Sevice}
               className={({ isActive }) =>
                 [cls.navbar__link, isActive ? cls.active : ""].join(" ")
               }

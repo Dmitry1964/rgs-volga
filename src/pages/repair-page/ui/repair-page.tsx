@@ -6,7 +6,7 @@ import { RepairPump } from "src/widgets/repair-pump";
 
 const RepairPage = (): React.ReactNode => {
     return (
-        <>
+        <main>
             <Intro>
                 <h2>Ремонт гидравлического оборудования</h2>
             </Intro>
@@ -14,7 +14,7 @@ const RepairPage = (): React.ReactNode => {
             <RepairCylinder />
             <RepairBox />
             <ContactsBlock/>
-        </>
+        </main>
     )
 };
 

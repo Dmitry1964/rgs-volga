@@ -6,6 +6,8 @@ import MainPageLazy from 'src/pages/main-page/ui/main-page-lazy';
 import RepairPageLazy from 'src/pages/repair-page/ui/repair-page-lazy';
 import { Loading } from 'src/shared/loading';
 import { ScrollTop } from 'src/shared/scroll-top';
+import ServicePageLazy from 'src/pages/service-page/ui/service-page-lazy';
+import PageNotFoundLazy from 'src/pages/page-not-found/ui/page-not-found-lazy';
 
 const App = (): React.ReactNode => {
   const router = createBrowserRouter([
@@ -26,11 +28,19 @@ const App = (): React.ReactNode => {
           path: AppRoutes.Repair,
           element: <RepairPageLazy />,
         },
+        {
+          path: AppRoutes.Sevice,
+          element: <ServicePageLazy />,
+        },
+        {
+          path: AppRoutes.NotFound,
+          element: <PageNotFoundLazy />
+        }
       ],
     },
   ]);
   return (
-    <Suspense fallback={<Loading/>}>
+    <Suspense fallback={<Loading />}>
       <RouterProvider router={router} />
     </Suspense>
   );

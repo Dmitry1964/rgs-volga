@@ -1,0 +1,88 @@
+@use "/src/styles/variables.scss";
+@use "/src/styles/mixins.scss";
+
+.page_notfound {
+  background-color: variables.$color-paua;
+  flex-grow: 1;
+  background-image: url("../img/content/pattern.jpeg");
+  padding: 50px 0;
+}
+
+.page_notfound__wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page_notfound__desc {
+  font-size: 6.2rem;
+  line-height: auto;
+  color: variables.$color-default-white;
+  text-align: center;
+  margin: 0 0 50px;
+
+  @include mixins.vp-1439 {
+    @include mixins.fluid-font-reverse(50px, 62px, 768px, 1280px)
+  }
+
+  @include mixins.vp-767 {
+    @include mixins.fluid-font-reverse(20px, 50px, 320px, 768px)
+  }
+}
+
+
+.page_notfound__title {
+  font-size: 6.2rem;
+  line-height: auto;
+  color: variables.$color-default-white;
+  text-align: center;
+  margin: 0 0 50px;
+
+  @include mixins.vp-1439 {
+    @include mixins.fluid-font-reverse(50px, 62px, 768px, 1280px)
+  }
+
+  @include mixins.vp-767 {
+    @include mixins.fluid-font-reverse(20px, 50px, 320px, 768px)
+  }
+}
+
+
+.page_notfound__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: variables.$color-default-white;
+  text-transform: uppercase;
+  background-color: transparent;
+  width: 230px;
+  height: 80px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.35s ease;
+  outline:  thick double variables.$color-default-white;
+border-radius: 40px;
+
+  &:hover {
+    background-color: variables.$color-curious-blue-80;
+  }
+
+  @include mixins.vp-1439 {
+    width: 200px;
+    height: 60px;
+  }
+
+  @include mixins.vp-1023 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    width: 150px;
+    height: 50px;
+  }
+
+}
+
+
