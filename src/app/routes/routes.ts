@@ -3,5 +3,6 @@ export enum AppRoutes {
     Sevice = '/service',
     Repair = '/repair',
     Rvd = '/rvd',
+    Diagnostics = '/diagnostics',
     NotFound = '*'
   }

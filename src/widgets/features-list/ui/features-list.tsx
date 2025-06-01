@@ -46,7 +46,7 @@ const FeaturesList = () => {
             webp2x="img/content/diag2x.webp"
             title="Диагностика"
             desc="диагностика гидравлической системы и гидравлического оборудования"
-            url="#"
+            url={AppRoutes.Diagnostics}
           />
         </SwiperSlide>
         <SwiperSlide>
