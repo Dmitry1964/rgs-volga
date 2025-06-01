@@ -68,7 +68,7 @@ const FeaturesList = () => {
             webp2x="img/content/remont-obor2x.webp"
             title="Ремонт спецтехники"
             desc='ремонт спецтехники - автокраны, АГП, манипуляторы'
-            url="#"
+            url={AppRoutes.Sevice}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -79,10 +79,10 @@ const FeaturesList = () => {
             webp2x="img/content/rvd2x.webp"
             title="Изготовление РВД"
             desc="изготовление рукавов высокого давления"
-            url="#"
+            url={AppRoutes.Rvd}
           />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <ServiceCard
             img="img/content/shtock.jpg"
             img2x="img/content/shtock2x.jpg"
@@ -92,7 +92,7 @@ const FeaturesList = () => {
             desc="изготовление штоков и гильз гидроцилиндров"
             url="#"
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </section>
   );

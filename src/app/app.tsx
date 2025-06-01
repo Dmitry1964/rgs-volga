@@ -8,6 +8,7 @@ import { Loading } from 'src/shared/loading';
 import { ScrollTop } from 'src/shared/scroll-top';
 import ServicePageLazy from 'src/pages/service-page/ui/service-page-lazy';
 import PageNotFoundLazy from 'src/pages/page-not-found/ui/page-not-found-lazy';
+import RvdPageLazy from 'src/pages/rvd-page/ui/rvd-page-lazy';
 
 const App = (): React.ReactNode => {
   const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const App = (): React.ReactNode => {
         {
           path: AppRoutes.Sevice,
           element: <ServicePageLazy />,
+        },
+        {
+          path: AppRoutes.Rvd,
+          element: <RvdPageLazy />,
         },
         {
           path: AppRoutes.NotFound,

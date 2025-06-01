@@ -40,7 +40,7 @@ const Navbar = () => {
           </li>
           <li className={cls.navbar__item}>
             <NavLink
-              to={AppRoutes.Sevice}
+              to={AppRoutes.Rvd}
               className={({ isActive }) =>
                 [cls.navbar__link, isActive ? cls.active : ""].join(" ")
               }
