@@ -10,7 +10,6 @@ import { MobileMenu } from "src/features/mobile-menu";
 const HeaderContacts = () => {
   const widthScreen = useViewportWidth();
 
-  console.log(widthScreen);
   return (
     <div className={cls.header_contacts}>
       <div className={cls.header_contacts__logo}>
