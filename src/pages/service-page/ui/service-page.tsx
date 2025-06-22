@@ -8,7 +8,8 @@ const ServicePage = (): React.ReactNode => {
       <Intro>
         <h2>Ремонт и сервис спецтехники</h2>
       </Intro>
-      <TempBlock imgUrl={'img/content/temp-service.jpg'}/>
+      <TempBlock imgUrl={'img/content/temp-service.jpg'} />
+      {/* <ServiceSection /> */}
       <ContactsBlock />
     </main>
   )

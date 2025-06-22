@@ -1,0 +1,20 @@
+@use '/src/styles/variables.scss';
+
+.service_krane {
+  // background-color: variables.$color-midnight-express;
+  background-image: url("../img/content/pattern.jpeg");
+  padding: 20px 0;
+}
+
+.service_krane__image {
+  // height: 800px;
+  filter:grayscale(80%) brightness(40%);
+
+  object-fit: contain;
+}
+
+.service_krane__title {
+  color: variables.$color-default-white;
+  text-align: center;
+  margin: 0;
+}
