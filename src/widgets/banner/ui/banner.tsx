@@ -1,6 +1,17 @@
+import {gsap} from 'gsap';
+import { useGSAP } from "@gsap/react";
 import cls from "./banner.module.scss";
 
 const Banner = (): React.ReactNode => {
+
+
+  useGSAP(() => {
+    gsap.from('#title', {opacity: 0, y: -100, duration: 1});
+    gsap.from('#slogan', {opacity: 0, y: -100, duration: 1})
+    gsap.from('#desc', {opacity: 0, y: 100, duration: 1})
+
+  })
+
   return (
     <section className={cls.banner}>
       <div className={cls.banner__wrapper}>
@@ -20,13 +31,13 @@ const Banner = (): React.ReactNode => {
           </picture>
         </div>
         <div className={cls.banner__content}>
-          <p className={cls.banner__slogan}>
+          <p id="slogan" className={cls.banner__slogan}>
             эффективный ремонт - наш приоритет
           </p>
-          <h2 className={cls.banner__title}>
+          <h2 id="title" className={cls.banner__title}>
             Ремонт гидравлического оборудования
           </h2>
-          <p className={cls.banner__desc}>
+          <p id="desc" className={cls.banner__desc}>
             Наша компания уже больше 20 лет занимается ремонтом гидравлического
             оборудования,<br/>сервисом и ремонтом гидравлических систем
             специализированной техники.
