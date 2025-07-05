@@ -24,7 +24,7 @@ const HeaderContacts = () => {
           <li className={cls.header_contacts__item}>
             <a
               className={cls.header_contacts__link}
-              href={`tel:${ContactsData.OfficePhone}`}
+              href={`tel:${ContactsData.RepairPhone}`}
             >
               <svg
                 width="40.000000"
@@ -72,7 +72,7 @@ const HeaderContacts = () => {
                   />
                 </g>
               </svg>
-              <span>{ContactsData.OfficePhoneStr}</span>
+              <span>{ContactsData.RepairPhoneStr}</span>
             </a>
           </li>
           <li className={cls.header_contacts__item}>

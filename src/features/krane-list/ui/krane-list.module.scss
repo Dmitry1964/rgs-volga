@@ -1,0 +1,72 @@
+@use 'src/styles/variables';
+
+.krane_service {
+}
+
+.krane_service__container {
+  position: relative;
+ height: 100%;
+}
+
+.krane_service__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+
+[id='krane'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+[id='kmu'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.krane_service__banner {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.krane_service__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: variables.$img-filter;
+}
+
+.krane_service__content {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  padding: 20px 0;
+}
+
+.krane_service__title {
+  font-size: 62px;
+  font-weight: 700;
+  color: variables.$color-malibu;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.krane_service__text {
+  font-size: 24px;
+  color: variables.$color-default-white;
+  text-align: left;
+  margin-bottom: 20px;
+  width: 50%;
+}

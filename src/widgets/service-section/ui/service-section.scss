@@ -1,0 +1,38 @@
+.scroll-sections__list {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scroll-sections__item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // opacity: 0;
+  z-index: 1;
+  // will-change: opacity, transform;
+  // transition: opacity 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.scroll-sections__item--blue {
+  background-color: blue;
+  z-index: 1;
+}
+
+.scroll-sections__item--orange {
+  background-color: orange;
+  z-index: 2;
+}
+
+.scroll-sections__item--green {
+  background-color: green;
+  z-index: 3;
+}
