@@ -2,11 +2,10 @@ import { FC, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import './krane-section.scss';
 import cls from './krane-list.module.scss';
 
 
-const KraneService: FC = () => {
+const KraneList: FC = () => {
 
   const container = useRef<HTMLDivElement>(null);
   const tl = gsap.timeline();
@@ -15,7 +14,6 @@ const KraneService: FC = () => {
 
   useGSAP(() => {
 
-    // tl.from('.scroll-sections__item--blue', { yPercent: 0 });
     tl.from('#section-kmu', { yPercent: 100, opacity: 1 });
     tl.from('#section-vipo', { yPercent: 100, opacity: 1 });
 
@@ -26,7 +24,7 @@ const KraneService: FC = () => {
       end: '+=4000',
       scrub: true,
       pin: true,
-      anticipatePin: 1,
+      // anticipatePin: 1,
     });
   });
 
@@ -36,9 +34,7 @@ const KraneService: FC = () => {
       <div className={cls.krane_sections__list} ref={container}>
         <div className={cls.krane_sections__item}>
           <div className={cls.krane_sections__content}>
-            <div className="container">
-              <h2 className={cls.krane_sections__title}>Ремонт и обслуживание автокранов</h2>
-            </div>
+            <h2 className={cls.krane_sections__title}>Ремонт и обслуживание автокранов</h2>
           </div>
           <div className={cls.krane_sections__banner}>
             <picture>
@@ -49,9 +45,7 @@ const KraneService: FC = () => {
         </div>
         <div id="section-kmu" className={cls.krane_sections__item}>
           <div className={cls.krane_sections__content}>
-            <div className="container">
-              <h2 className={cls.krane_sections__title}>Ремонт и обслуживание кранов-манипуляторов</h2>
-            </div>
+            <h2 className={cls.krane_sections__title}>Ремонт и обслуживание кранов-манипуляторов</h2>
           </div>
           <div className={cls.krane_sections__banner}>
             <picture>
@@ -62,9 +56,7 @@ const KraneService: FC = () => {
         </div>
         <div id="section-vipo" className={cls.krane_sections__item}>
           <div className={cls.krane_sections__content}>
-            <div className="container">
-              <h2 className={cls.krane_sections__title}>Ремонт и обслуживание автовышек</h2>
-            </div>
+            <h2 className={cls.krane_sections__title}>Ремонт и обслуживание автовышек</h2>
           </div>
           <div className={cls.krane_sections__banner}>
             <picture>
@@ -80,4 +72,4 @@ const KraneService: FC = () => {
   )
 }
 
-export default KraneService;
+export default KraneList;

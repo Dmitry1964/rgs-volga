@@ -16,7 +16,6 @@
   display: grid;
   grid-template-columns: 1fr;
   background-color: variables.$color-paua;
-  // grid-template-rows: auto auto;
 }
 
 .krane_sections__banner,
@@ -25,6 +24,7 @@
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+
 }
 
 .krane_sections__content {
@@ -32,15 +32,17 @@
 }
 
 .krane_sections__img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: variables.$img-filter;
+  box-shadow: 0 -5px 5px variables.$color-curious-blue-80;
 }
 
 .krane_sections__title {
   font-size: 6.2rem;
-  height: 7rem;
-  color: variables.$color-midnight-express;
+  line-height: 7rem;
+  color: variables.$color-default-white;
   text-align: center;
+  background-color: variables.$color-curious-blue-80;
+  margin-top: 100px;
+  padding: 50px 0;
 }

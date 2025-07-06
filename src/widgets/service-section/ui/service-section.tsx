@@ -1,10 +1,11 @@
 import { FC} from "react";
-import { KraneService } from "src/features/krane-list";
+import { KraneList } from "src/features/krane-list";
+// import { KraneSection } from "src/features/krane-section";
 
 const ServiceSection: FC = () => {
 
   return (
-    <KraneService />
+    <KraneList />
   )
 };
 

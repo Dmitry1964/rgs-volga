@@ -1,1 +1,1 @@
-export { default as KraneService } from './ui/krane-service';
+export { default as KraneList } from './ui/krane-list';
