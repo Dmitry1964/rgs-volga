@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import cls from './krane-section.module.scss';
+import {CustomEase} from 'gsap/CustomEase';
 
 
 const KraneSection: FC = () => {
@@ -11,12 +12,16 @@ const KraneSection: FC = () => {
   const KRANE_REPAIR_LIST = ['ремонт гидравлического оборудования', 'ремонт механизма телескопирования стрелы', 'ремонт опорно-поворотного устройства', 'диагностика и ремонт электрооборудования'];
 
   const container = useRef<HTMLDivElement>(null);
+  const kraneList = useRef<HTMLUListElement>(null)
   const tl = gsap.timeline();
-  gsap.registerPlugin(ScrollTrigger);
+  const tlKraneList = gsap.timeline();
+  gsap.registerPlugin(ScrollTrigger, CustomEase);
+
+  const customEase = CustomEase.create('custom', "M0,0 C0,0.408 0.154,1.102 0.223,1.068 0.763,0.797 1,1 1,1.074 " )
 
 
   useGSAP(() => {
-    tl.from('#section-title', { yPercent: 0, opacity: 1 });
+    tl.from('#section-title', { yPercent: 0, opacity: 1});
     tl.from('#section-krane', { yPercent: 0, opacity: 1 });
     tl.from('#section-kmu', { yPercent: 100, opacity: 1 });
     tl.from('#section-vipo', { yPercent: 100, opacity: 1 });
@@ -30,6 +35,19 @@ const KraneSection: FC = () => {
       pin: true,
       // anticipatePin: 1,
     });
+
+    tlKraneList.to('#item-1', {x: 0, opacity: 1, ease: customEase, duration: 1});
+    tlKraneList.to('#item-2', {x: 0, opacity: 1, ease: customEase, duration: 1 });
+    tlKraneList.to('#item-3', {x: 0, opacity: 1, ease: customEase, duration: 1});
+    tlKraneList.to('#krane-repair-list', {x: 0, opacity: 1, ease: customEase, duration: 1})
+
+
+    ScrollTrigger.create({
+      animation: tlKraneList,
+      trigger: container.current,
+      start: '60% 80%',
+    })
+
   });
 
 
@@ -42,15 +60,15 @@ const KraneSection: FC = () => {
           </h2>
           <div className={cls.krane_section__item_wrapper}>
             <div className="container">
-              <ul className={cls.krane_section__names_list}>
-                {KRANE_LIST.map((item) => (
-                  <li className={cls.krane_section__names_item}>
+              <ul className={cls.krane_section__names_list} ref={kraneList}>
+                {KRANE_LIST.map((item, index) => (
+                  <li className={cls.krane_section__names_item} id={`item-${index + 1}`}>
                     <img src="img/svg/icon-checkbox.svg" width={30} height={30} alt="Чекбокс" />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
-              <ul className={cls.krane_section__repair_list}>
+              <ul className={cls.krane_section__repair_list} id="krane-repair-list">
                 {KRANE_REPAIR_LIST.map((item) => (
                   <li className={cls.krane_section__repair_item}>
                     <span>{item}</span>

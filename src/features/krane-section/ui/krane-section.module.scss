@@ -62,6 +62,9 @@
   color: variables.$color-default-white;
   font-family: variables.$ff-second;
 
+  opacity: 0;
+  transform: translate(-200px);
+
   & img {
     position: relative;
     top: 7px;
@@ -73,6 +76,8 @@
   list-style: circle;
   margin: 0 0 0 150px;
   padding: 0;
+  opacity: 0;
+  transform: translate(-200px);
 }
 
 .krane_section__repair_item {
