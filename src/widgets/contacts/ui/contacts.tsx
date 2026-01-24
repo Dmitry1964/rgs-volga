@@ -61,7 +61,7 @@ const ContactsSection = () => {
                 </div>
               </li>
             </ul>
-            <ul className={cls.contacts__social_list}>
+            {/* <ul className={cls.contacts__social_list}>
               <li className={cls.contacts__social_item}>
                 <div className={cls.contacts__item_links}>
                   <a href={`https://t.me/${ContactsData.Telegram}`} target="_blank">
@@ -87,7 +87,7 @@ const ContactsSection = () => {
                   derv
                 </div>
               </li>
-            </ul>
+            </ul> */}
           </div>
           <div className={cls.contacts__map}>
             <MapGis />

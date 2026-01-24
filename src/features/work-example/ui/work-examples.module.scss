@@ -1,0 +1,17 @@
+.work_examples {
+  padding: 40px 0;
+}
+
+.work_examples__content {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.work_examples__img {
+  text-align: center;
+
+  &_after {
+    position: absolute;
+  }
+}

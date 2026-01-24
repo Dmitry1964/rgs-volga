@@ -2,6 +2,7 @@ import { About } from "src/widgets/about";
 import { Banner } from "src/widgets/banner";
 import { Contacts } from "src/widgets/contacts";
 import { FeaturesList } from "src/widgets/features-list";
+import { FuelPumpSection } from "src/widgets/fuel-pump-section";
 import { Intro } from "src/widgets/intro";
 import { Partners } from "src/widgets/partners";
 
@@ -13,6 +14,7 @@ const MainPage = (): React.ReactNode => {
         <h2>УСЛУГИ НАШЕЙ КОМПАНИИ:</h2>
       </Intro>
       <FeaturesList />
+      <FuelPumpSection/>
       <About />
       <Partners />
       <Contacts />

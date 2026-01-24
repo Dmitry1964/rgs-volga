@@ -1,0 +1,62 @@
+
+@use '/src/styles/variables.scss' as *;
+@use '/src/styles/mixins.scss';
+
+.fuel_pump {
+  padding: 115px 0 0;
+  background-color: $color-midnight-express;
+
+  @include mixins.vp-1023 {
+    padding-top: 65px;
+  }
+
+  @include mixins.vp-767 {
+    padding-top: 30px;
+    // height: 200px;
+  }
+
+
+}
+
+.fuel_pump__wrapper {
+  display: grid;
+  grid-template-columns: 66% 1fr;
+
+  @include mixins.vp-767 {
+    grid-template-columns: 60% 1fr;
+  }
+
+  @include mixins.vp-374 {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+}
+
+.fuel_pump__content {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.fuel_pump__title {
+  font-family: $ff-second;
+  font-size: 4.5rem;
+  line-height: auto;
+  color: $color-malibu;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+
+  @include mixins.vp-1279 {
+    @include mixins.fluid-font-reverse(30px, 45px, 768px, 1280px)
+  }
+
+  @include mixins.vp-767 {
+    @include mixins.fluid-font-reverse(15px, 30px, 320px, 768px);
+    line-height: 2.8rem;
+    margin: 0 0 10px;
+  }
+
+}

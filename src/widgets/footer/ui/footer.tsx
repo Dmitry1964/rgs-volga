@@ -8,7 +8,7 @@ const Footer = () => {
           <div className={cls.footer__copyright}>
             <span>copyright © 2024-2025 ООО "Гидросервис"</span>
           </div>
-          <div className={cls.footer__links}>
+          {/* <div className={cls.footer__links}>
             <span>Поддержка и разработка сайтов RGS-VOLGA</span>
             <a href="https://t.me/gidravlika_m">
               <img
@@ -26,7 +26,7 @@ const Footer = () => {
                 alt="Иконка точка на карте"
               />
             </a>
-          </div>
+          </div> */}
           {/* <a className={cls.footer__btn} href="#"/> */}
         </div>
       </div>
